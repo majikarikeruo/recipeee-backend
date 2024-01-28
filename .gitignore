@@ -1,6 +1,3 @@
-<<<<<<< HEAD
 .env
 app/__pycache__/
-=======
-.env
->>>>>>> cbdf138 ([modify]Fast APIのPOSTエンドポイントにオーダー内容を示す引数追加)
+**/__pycache__/
