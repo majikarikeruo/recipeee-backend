@@ -1,0 +1,15 @@
+{
+  "family_members": [
+    {
+      "age": 41,
+      "gender": "男性"
+    },
+    {
+      "age": 38,
+      "gender": "女性"
+    }
+  ],
+  "dislike_food": [
+    "ゆで卵"
+  ]
+}
