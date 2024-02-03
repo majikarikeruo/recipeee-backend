@@ -5,8 +5,7 @@ import asyncio
 
 from app.model import RecipeBase
 from app.config import client
-from app.prompt import make_prompt
-from app.prompt import json_schema
+from app.prompt import json_schema,make_prompt,system_prompt
 import json 
 
 # 環境変数を読み込みするためにj必要
@@ -39,7 +38,7 @@ async def get_daily_plan(day, days, recipe_base, policy, loop):
         None, 
         lambda: make_api_call(
             "gpt-3.5-turbo-1106",
-            [{"role": "system", "content": "あなたは食事プランとレシピ、そしてレシピを作るに必要な食材が何かの情報を提供する親切なアシスタントです。"},
+            [{"role": "system", "content": system_prompt},
              {"role": "user", "content": user_input}]
         )
     )
